@@ -1,0 +1,16 @@
+.pho_profile img {
+        width: 111px;
+}
+.mod {
+        float: left;
+        width: 41.75%;
+}
+.mod1{
+        width: 92%;
+}
+.mod1,
+.mod4,
+.mod6,
+.mod8 {
+        clear: left;
+}

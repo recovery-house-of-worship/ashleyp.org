@@ -1,0 +1,305 @@
+@import url(//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+
+body{
+	background-color: #F1EBDF;
+	
+	font-family: Droid Serif, Helvetica, Arial, Sans-serif;
+	font-size: 16px;
+	line-height: 1.3;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+.clearfix:after{
+	clear: both;
+}
+
+.link-list{
+	list-style-type: none;
+	margin-left: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+.link-list .link{
+	margin: .5em auto;
+	font-size: 1.1em;
+}
+
+h1,
+h2,
+h3{
+	font-weight: 700;
+	line-height: 1.25;
+}
+h1{
+	margin: .25em auto;
+	font-size: 2.5em;
+}
+h2{
+	margin: 3px 0 12px;
+	font-size: 1.75em;
+}
+h3{
+	margin: 12px 0 5px;
+}
+p{
+	margin: 5px 0 12px;
+}
+a {
+	color: #8D0118;
+	text-decoration: none;
+}
+a:visited { color: #AE0055; }
+a:hover { color: #C88B11; }
+
+.txt_big{
+	font-size: 1.5em;
+	line-height: 1.5;
+}
+.txt_center{
+	text-align: center;
+}
+
+img{
+	max-width: 100%;
+	text-align: center;
+}
+
+.ctr{
+	margin: auto;
+}
+
+.btn,
+a.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	color: #FFF;
+	
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+	background-image: none;
+	background-color: #8d0118;
+	
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+button{
+	text-transform: none;
+	overflow: visible;
+	margin: 0;
+	font: inherit;
+	color: inherit;
+}
+
+.form-control {
+	display: block;
+	height: 34px;
+	padding: 6px 12px;
+	
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	
+	background-color: #fff;
+	background-image: none;
+	
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.btn:hover,
+a.btn:hover{
+	background: #c88b11;
+}
+
+.input-wrap{
+	width: 254px;
+	margin: auto;
+}
+
+.footer{
+	padding: 1em;
+	text-align: center;
+}
+
+#map_canvas {
+	width: 100%;
+	height: 225px;
+}
+
+
+.intro_block{
+	margin-bottom: 25px;
+	padding: .75em .75em .25em;
+	border-bottom: 5px solid #C88B11;
+	background: url(../img/bg-sm-brooklyn-bridge.jpg) center center repeat-x;
+	color: #fff;
+}
+.pho_profile{
+	width: 111px;
+	margin: auto;
+	padding: 3px 3px 0;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	background: #FCFCFC;
+	line-height: 1;
+}
+
+.mod{
+	margin: 16px;
+	padding: 14px 16px 16px;
+	
+	border: 1px solid #CCCCCC;
+	border-top: 3px solid #8D0118;
+	background: #FCFCFC;
+	
+	color: #333333;
+	text-align: center;
+}
+
+.mod_brwn {
+	border-top: 3px solid #C88B11;
+}
+.mod_mrn_lte{
+	border-top: 3px solid #AE0055;
+}
+
+.form-control{
+	float: left;
+	width: 198px;
+	margin-right: 10px;
+}
+.btn-submit{
+	float: left;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
+
+@media screen and (min-width: 750px){
+	.ctr{
+		width: 750px;
+	}
+	.intro_block{
+		padding: 2em;
+		background-image: url(../img/bg-md-brooklyn-bridge.jpg);
+	}
+	.txt_sub_intro{
+		width: 430px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	h1{
+		font-size: 3em;
+	}
+	.mod{
+		float: left;
+		width: 650px;
+		margin: 25px;
+		padding: 22px 24px 24px;
+	}
+	.mod2,
+	.mod3{
+		width: 275px;
+		height: 320px;
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.ctr{
+		width: 960px;
+	}
+	.intro_block{
+		background-image: url(../img/bg-lg-brooklyn-bridge.jpg);
+	}
+	.mod1{
+		width: 860px;
+	}
+	.mod2,
+	.mod3,
+	.mod4,
+	.mod5{
+		width: 380px;
+	}
+	.mod2,
+	.mod3{
+		height: 260px;
+	}
+	#map_canvas{
+		height: 271px;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.ctr{
+		width: 1160px;
+	}
+	.mod1{
+		width: 790px;
+		padding-left: 160px;
+		padding-right: 160px;
+	}
+	.mod2,
+	.mod3,
+	.mod4,
+	.mod5{
+		width: 480px;
+	}
+	#map_canvas{
+		height: 251px;
+	}
+}

@@ -1,0 +1,20 @@
+.ctr {
+    padding: 0 3%;
+}
+.pho_profile img {
+        width: 111px;
+}
+.mod {
+        float: left;
+        width: 25.165%;
+}
+.mod1 {
+        width: 58.5%;
+}
+.mod1,
+.mod3,
+.mod6,
+.mod9 {
+        clear: left;
+}
+
